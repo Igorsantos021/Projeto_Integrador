@@ -1,0 +1,131 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(219, 219, 163);
+}
+
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+h2{
+    text-align: center;
+    height: 50px;
+    text-decoration: solid;
+    font-size: 40px;
+    margin-top: 100px;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.logo {
+    float: left;
+    font-size: 24px;
+}
+
+nav {
+    float: right;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Estilização das setas do carrossel */
+.content .slider .slick-next {
+    font-size: 24px; /* Tamanho do ícone */
+    color: #000000; /* Cor do ícone */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo */
+    width: 40px; /* Largura */
+    height: 40px; /* Altura */
+    border-radius: 50%; /* Borda circular */
+    position: absolute; /* Posição absoluta */
+    top: 60%; /* Posicionamento vertical */
+    transform: translateY(-50%); /* Ajuste de posicionamento vertical */
+    z-index: 9999; /* Z-index para garantir que fique acima do conteúdo */
+    cursor: pointer; /* Cursor do mouse */
+}
+.content .slider .slick-prev {
+    font-size: 24px; /* Tamanho do ícone */
+    color: #000000; /* Cor do ícone */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo */
+    width: 40px; /* Largura */
+    height: 40px; /* Altura */
+    border-radius: 50%; /* Borda circular */
+    position: absolute; /* Posição absoluta */
+    top: 60%; /* Posicionamento vertical */
+    transform: translateY(-50%); /* Ajuste de posicionamento vertical */
+    z-index: 9999; /* Z-index para garantir que fique acima do conteúdo */
+    cursor: pointer; /* Cursor do mouse */
+}
+
+.slick-prev {
+    left: 10px; /* Posicionamento à esquerda */
+}
+
+.slick-next {
+    right: 10px; /* Posicionamento à direita */
+}
+
+.content {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    
+}
+
+.slider img {
+    margin: 200px 0 100px 0;
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; /* Defina a altura máxima desejada */
+}
+
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    .menu.active {
+        display: block;
+    }
+    .hamburguer {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .hamburguer {
+        display: none;
+    }
+}
